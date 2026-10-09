@@ -1,9 +1,22 @@
-<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="app-version" content="1.0.1"><title>一餐一记 · 本机手账</title><style>body{background:#f7f3eb;color:#42392f;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px}button{margin:0;padding:0;font-size:inherit;line-height:1.4;border-radius:0;background:none;color:inherit}button::after{border:0}button[disabled]{opacity:.5}view,text,input,textarea{box-sizing:border-box}.body{max-width:450px;margin:auto;padding:18px 17px 90px}.brand{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.brand-mark{font-size:15px;font-weight:700;letter-spacing:2.5px}.eyebrow{font-size:8.5px;letter-spacing:1.5px;color:#998774}.hero{position:relative;padding:12px 2px 23px;overflow:hidden}.hero-title{font-family:serif;font-weight:600;font-size:29px;line-height:1.4;letter-spacing:2px;margin:10px 0}.hero-sub{font-size:12px;color:#93836f}.art{position:absolute;right:-4px;top:22.5px;width:130px;height:130px;transform:rotate(-13deg)}.plate{position:absolute;left:10px;top:5px;width:100px;height:100px;background:#eee5d6;border:7px solid #fffaf1;border-radius:50%;box-shadow:2px 6px 10px #75604e16;display:flex;align-items:center;justify-content:center}.food{font-size:69px;line-height:1;color:#9eaa7e;transform:rotate(25deg)}.fork{position:absolute;right:2.5px;top:17.5px;color:#b5a488;font-size:75px}.leaf{position:absolute;bottom:0;left:6px;color:#8b9573;font-size:44px}.summary{background:#eee3d2;border:0.5px solid #e4d6c3;border-radius:16px;padding:17px;display:flex;justify-content:space-between;align-items:center}.muted{font-size:12px;color:#968775}.big-number{font-family:Georgia,serif;font-size:38px;margin-top:4px;letter-spacing:-1px;line-height:1.2}.summary-right{text-align:right;padding-left:10px;border-left:0.5px solid #d8cbb9}.small-number{font-family:Georgia,serif;font-size:17px;margin:6px 0}.tiny{font-size:9.5px;color:#a39785;letter-spacing:0.5px}.section-head{display:flex;align-items:center;justify-content:space-between;margin:19px 0 12px;gap:8px}.section-title{font-size:16px;font-weight:600;letter-spacing:0.5px}.text-button{font-size:11px;color:#a36343}.week-wrap{display:flex;align-items:center;margin-bottom:18px}.week{display:flex;flex:1;justify-content:space-between}.week-arrow{width:12px;font-size:18px;color:#aa9783}.day{width:38px;border-radius:19px;text-align:center;padding:8px 0 5px;display:flex;flex-direction:column;align-items:center;gap:5px}.weekday{font-size:10px;color:#a19483}.day-number{font-family:Georgia,serif;font-size:16px}.selected{background:#aa633f;color:#fff7ea;box-shadow:0 4px 8px #aa633f20}.selected .weekday{color:#ead7c8}.dot{width:3px;height:3px;border-radius:50%;background:transparent}.dot.marked{background:#b07952}.selected .dot.marked{background:#fff7ea}.filters{display:flex;gap:6px;margin:11px 0 14px}.chip{flex:1;background:#fffaf3;border:0.5px solid #e3dacb;border-radius:20px;padding:6.5px 0;font-size:12px;color:#8c7d6a}.chip.active{background:#aa633f;color:#fff8ed;border-color:#aa633f}.cards{display:grid;grid-template-columns:1fr 1fr;gap:11px}.card{background:#fffdf8;border:0.5px solid #e8dfd1;border-radius:13px;overflow:hidden}.photo-wrap{position:relative}.photo{width:100%;height:130px;display:block}.placeholder{background:linear-gradient(145deg,#ece4d4,#e1e7d6);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;color:#9b9f7a;font-size:43px}.meal-badge{position:absolute;top:8px;left:8px;background:#fffbf0eb;border-radius:12px;padding:3.5px 8px;font-size:10px;color:#776750}.card-body{padding:11px}.card-title{font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.card-note{font-size:10px;color:#a19789;margin:6px 0 13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.card-bottom{display:flex;align-items:center;justify-content:space-between}.price{font-family:Georgia,serif;font-size:16px;color:#a7603e}.edit-label{font-size:9.5px;color:#a89985}.empty{text-align:center;padding:19px 7px 24px;background:#fffbf570;border:0.5px dashed #ded3c0;border-radius:14px}.empty-icon{font-size:40px;color:#a2ab8b;margin-bottom:6px}.empty .muted{margin:9px 0 14px;display:block}.outline-button{display:inline-block;border:0.5px solid #b78966;border-radius:18px;color:#9b623f;padding:8px 16px;font-size:12px}.bottom-note{text-align:center;color:#b4a894;font-size:10px;margin-top:21px}.nav{position:fixed;bottom:0;left:0;right:0;display:flex;align-items:center;justify-content:space-around;background:#fffcf5f5;border-top:0.5px solid #e8dfd0;padding:10px 15px calc(10px + env(safe-area-inset-bottom));z-index:5}.nav-item{font-size:10px;color:#a69a88;display:flex;flex-direction:column;align-items:center;gap:2.5px;width:70px}.nav-icon{font-size:18px}.nav-active{color:#a15f3d}.add-button{background:#a8613e;color:#fff8ed;border-radius:25px;padding:12px 23px;font-size:14px;box-shadow:0 4px 11px #9a543025}.stats-summary{display:block}.stats-line{display:flex;justify-content:space-between;margin-top:14px;font-size:11px;color:#8f7b63}.stat-panel{background:#fffcf6;border:0.5px solid #e8dfd1;border-radius:14px;padding:16px;margin-top:14px}.category{margin-top:17px}.category-head{display:flex;justify-content:space-between;font-size:12.5px}.track{height:6px;background:#eee8dc;border-radius:5px;margin-top:8px;overflow:hidden}.fill{height:100%;background:#b5805e;border-radius:5px}.all-total{display:flex;justify-content:space-between;align-items:center;margin:17px 2px}.footnote{font-size:10.5px;color:#a39683;line-height:1.8}.overlay{position:fixed;inset:0;background:#33291f65;z-index:10;display:flex;align-items:flex-end}.sheet{width:100%;background:#fbf7ef;border-radius:19px 19px 0 0;padding:8px 17px calc(12px + env(safe-area-inset-bottom))}.sheet-handle{width:35px;height:3.5px;background:#d8cdbd;border-radius:4px;margin:auto}.sheet .section-head{margin:12px 0}.close{font-size:23px;color:#9c8b75;width:32px}.form-scroll{max-height:62vh}.upload{height:105px;position:relative;background:#eee8da;border:1px dashed #d4c4af;border-radius:12px;overflow:hidden;text-align:center;display:flex;align-items:center;justify-content:center;color:#947658;font-size:12.5px}.upload image{width:100%;height:100%}.upload-icon{font-size:23px;margin-bottom:2.5px}.upload .tiny{margin-top:6px}.photo-caption{position:absolute;bottom:6px;right:7px;background:#fff8eddb;padding:4px 8px;border-radius:10px;font-size:10px}.remove-photo{text-align:right;margin-top:6px}.form-label{font-size:12px;margin:13px 0 7px;color:#85725c}.input{background:#fffdf8;border:0.5px solid #e4dacb;border-radius:9px;padding:10px;width:100%;font-size:13.5px;height:41px}.amount-input{display:flex;align-items:center;gap:9px;border-bottom:0.5px solid #ddcfbc;padding:4px 0 9px;font-family:Georgia,serif;color:#a3603f;font-size:24px}.amount-input input{flex:1;height:32.5px;font-size:26px}.date-field{display:flex;justify-content:space-between;font-size:12.5px;padding:7px 0}.note-input{height:60px}.save-button{margin-top:12px;background:#a8613e;color:#fff9f0;padding:12px;border-radius:22px;font-size:14px}.delete{font-size:11.5px;color:#a5715a;padding:13px}.remove-photo{font-size:10.5px}
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="app-version" content="1.1.0"><title>一餐一记 · 本机手账</title><style>body{background:#f7f3eb;color:#42392f;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px}button{margin:0;padding:0;font-size:inherit;line-height:1.4;border-radius:0;background:none;color:inherit}button::after{border:0}button[disabled]{opacity:.5}view,text,input,textarea{box-sizing:border-box}.body{max-width:450px;margin:auto;padding:18px 17px 90px}.brand{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.brand-mark{font-size:15px;font-weight:700;letter-spacing:2.5px}.eyebrow{font-size:8.5px;letter-spacing:1.5px;color:#998774}.hero{position:relative;padding:12px 2px 23px;overflow:hidden}.hero-title{font-family:serif;font-weight:600;font-size:29px;line-height:1.4;letter-spacing:2px;margin:10px 0}.hero-sub{font-size:12px;color:#93836f}.art{position:absolute;right:-4px;top:22.5px;width:130px;height:130px;transform:rotate(-13deg)}.plate{position:absolute;left:10px;top:5px;width:100px;height:100px;background:#eee5d6;border:7px solid #fffaf1;border-radius:50%;box-shadow:2px 6px 10px #75604e16;display:flex;align-items:center;justify-content:center}.food{font-size:69px;line-height:1;color:#9eaa7e;transform:rotate(25deg)}.fork{position:absolute;right:2.5px;top:17.5px;color:#b5a488;font-size:75px}.leaf{position:absolute;bottom:0;left:6px;color:#8b9573;font-size:44px}.summary{background:#eee3d2;border:0.5px solid #e4d6c3;border-radius:16px;padding:17px;display:flex;justify-content:space-between;align-items:center}.muted{font-size:12px;color:#968775}.big-number{font-family:Georgia,serif;font-size:38px;margin-top:4px;letter-spacing:-1px;line-height:1.2}.summary-right{text-align:right;padding-left:10px;border-left:0.5px solid #d8cbb9}.small-number{font-family:Georgia,serif;font-size:17px;margin:6px 0}.tiny{font-size:9.5px;color:#a39785;letter-spacing:0.5px}.section-head{display:flex;align-items:center;justify-content:space-between;margin:19px 0 12px;gap:8px}.section-title{font-size:16px;font-weight:600;letter-spacing:0.5px}.text-button{font-size:11px;color:#a36343}.week-wrap{display:flex;align-items:center;margin-bottom:18px}.week{display:flex;flex:1;justify-content:space-between}.week-arrow{width:12px;font-size:18px;color:#aa9783}.day{width:38px;border-radius:19px;text-align:center;padding:8px 0 5px;display:flex;flex-direction:column;align-items:center;gap:5px}.weekday{font-size:10px;color:#a19483}.day-number{font-family:Georgia,serif;font-size:16px}.selected{background:#aa633f;color:#fff7ea;box-shadow:0 4px 8px #aa633f20}.selected .weekday{color:#ead7c8}.dot{width:3px;height:3px;border-radius:50%;background:transparent}.dot.marked{background:#b07952}.selected .dot.marked{background:#fff7ea}.filters{display:flex;gap:6px;margin:11px 0 14px}.chip{flex:1;background:#fffaf3;border:0.5px solid #e3dacb;border-radius:20px;padding:6.5px 0;font-size:12px;color:#8c7d6a}.chip.active{background:#aa633f;color:#fff8ed;border-color:#aa633f}.cards{display:grid;grid-template-columns:1fr 1fr;gap:11px}.card{background:#fffdf8;border:0.5px solid #e8dfd1;border-radius:13px;overflow:hidden}.photo-wrap{position:relative}.photo{width:100%;height:130px;display:block}.placeholder{background:linear-gradient(145deg,#ece4d4,#e1e7d6);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;color:#9b9f7a;font-size:43px}.meal-badge{position:absolute;top:8px;left:8px;background:#fffbf0eb;border-radius:12px;padding:3.5px 8px;font-size:10px;color:#776750}.card-body{padding:11px}.card-title{font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.card-note{font-size:10px;color:#a19789;margin:6px 0 13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.card-bottom{display:flex;align-items:center;justify-content:space-between}.price{font-family:Georgia,serif;font-size:16px;color:#a7603e}.edit-label{font-size:9.5px;color:#a89985}.empty{text-align:center;padding:19px 7px 24px;background:#fffbf570;border:0.5px dashed #ded3c0;border-radius:14px}.empty-icon{font-size:40px;color:#a2ab8b;margin-bottom:6px}.empty .muted{margin:9px 0 14px;display:block}.outline-button{display:inline-block;border:0.5px solid #b78966;border-radius:18px;color:#9b623f;padding:8px 16px;font-size:12px}.bottom-note{text-align:center;color:#b4a894;font-size:10px;margin-top:21px}.nav{position:fixed;bottom:0;left:0;right:0;display:flex;align-items:center;justify-content:space-around;background:#fffcf5f5;border-top:0.5px solid #e8dfd0;padding:10px 15px calc(10px + env(safe-area-inset-bottom));z-index:5}.nav-item{font-size:10px;color:#a69a88;display:flex;flex-direction:column;align-items:center;gap:2.5px;width:70px}.nav-icon{font-size:18px}.nav-active{color:#a15f3d}.add-button{background:#a8613e;color:#fff8ed;border-radius:25px;padding:12px 23px;font-size:14px;box-shadow:0 4px 11px #9a543025}.stats-summary{display:block}.stats-line{display:flex;justify-content:space-between;margin-top:14px;font-size:11px;color:#8f7b63}.stat-panel{background:#fffcf6;border:0.5px solid #e8dfd1;border-radius:14px;padding:16px;margin-top:14px}.category{margin-top:17px}.category-head{display:flex;justify-content:space-between;font-size:12.5px}.track{height:6px;background:#eee8dc;border-radius:5px;margin-top:8px;overflow:hidden}.fill{height:100%;background:#b5805e;border-radius:5px}.all-total{display:flex;justify-content:space-between;align-items:center;margin:17px 2px}.footnote{font-size:10.5px;color:#a39683;line-height:1.8}.overlay{position:fixed;inset:0;background:#33291f65;z-index:10;display:flex;align-items:flex-end}.sheet{width:100%;background:#fbf7ef;border-radius:19px 19px 0 0;padding:8px 17px calc(12px + env(safe-area-inset-bottom))}.sheet-handle{width:35px;height:3.5px;background:#d8cdbd;border-radius:4px;margin:auto}.sheet .section-head{margin:12px 0}.close{font-size:23px;color:#9c8b75;width:32px}.form-scroll{max-height:62vh}.upload{height:105px;position:relative;background:#eee8da;border:1px dashed #d4c4af;border-radius:12px;overflow:hidden;text-align:center;display:flex;align-items:center;justify-content:center;color:#947658;font-size:12.5px}.upload image{width:100%;height:100%}.upload-icon{font-size:23px;margin-bottom:2.5px}.upload .tiny{margin-top:6px}.photo-caption{position:absolute;bottom:6px;right:7px;background:#fff8eddb;padding:4px 8px;border-radius:10px;font-size:10px}.remove-photo{text-align:right;margin-top:6px}.form-label{font-size:12px;margin:13px 0 7px;color:#85725c}.input{background:#fffdf8;border:0.5px solid #e4dacb;border-radius:9px;padding:10px;width:100%;font-size:13.5px;height:41px}.amount-input{display:flex;align-items:center;gap:9px;border-bottom:0.5px solid #ddcfbc;padding:4px 0 9px;font-family:Georgia,serif;color:#a3603f;font-size:24px}.amount-input input{flex:1;height:32.5px;font-size:26px}.date-field{display:flex;justify-content:space-between;font-size:12.5px;padding:7px 0}.note-input{height:60px}.save-button{margin-top:12px;background:#a8613e;color:#fff9f0;padding:12px;border-radius:22px;font-size:14px}.delete{font-size:11.5px;color:#a5715a;padding:13px}.remove-photo{font-size:10.5px}
 /* Keep narrow screens, large totals and short screens inside the viewport. */
 .cards{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.card,.summary>view{min-width:0}.big-number,.small-number,.price{overflow-wrap:anywhere;word-break:break-all}.card-bottom{flex-wrap:wrap;gap:4px}.summary-right{flex-shrink:0;max-width:46%}.sheet{max-height:94vh;display:flex;flex-direction:column}.sheet-handle,.sheet .section-head,.save-button{flex-shrink:0}.form-scroll{height:56vh;min-height:0;flex-shrink:1}.day{flex:1;min-width:0}.week-arrow{flex-shrink:0}.hero-title{position:relative;z-index:1}.art{opacity:.75}
 
 body{margin:0}*{box-sizing:border-box}button,input,textarea{font:inherit}button{border:0;cursor:pointer}button:focus-visible{outline:2px solid #a8613e;outline-offset:3px}input,textarea{color:inherit}.nav,.sheet{max-width:480px;margin:auto}.page{max-width:480px}.muted,.tiny{display:inline-block}.week{min-width:0}.day{cursor:pointer}.card-body{cursor:pointer}.nav-item{border:0}.input{display:block}.form-scroll{overflow:auto}.amount-input input{border:0;background:transparent;min-width:0;width:100%;outline:none}.upload img{width:100%;height:100%;object-fit:cover}.photo{object-fit:cover}.overlay{justify-content:center}.photo-wrap{overflow:hidden}.preview-label{text-align:center;padding:10px;background:#eae6da;font-size:11px;color:#8b7b65}.date-native{border:0;background:transparent;color:#8b735c;width:130px;font-size:12px}dialog{border:0;border-radius:20px;background:#fcf7ee;max-width:90vw}dialog::backdrop{background:#33291f88}dialog img{max-width:80vw;max-height:75vh}#toast{position:fixed;left:50%;top:30%;transform:translateX(-50%);background:#42392fe8;color:white;padding:14px 24px;border-radius:30px;z-index:30;pointer-events:none} .hero-title{margin-bottom:20px}
-.local-tools{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin:24px 0 12px}.local-tools button{color:#945d3d;font-size:13px;padding:10px 0}.local-tip{text-align:center;font-size:11px;line-height:1.8}.sheet{max-height:94dvh}.form-scroll{overscroll-behavior:contain}.brand{gap:8px}.brand .eyebrow{font-size:8px;letter-spacing:1px}.nav{gap:8px;padding-left:12px;padding-right:12px}.nav-item{flex:1;min-width:0}.add-button{white-space:nowrap;padding:18px 24px}.day{width:auto;min-width:0}.week{min-width:0}.summary{gap:12px;padding:20px}.big-number{font-size:clamp(25px,9vw,38px);overflow-wrap:anywhere}.card-bottom{gap:6px;flex-wrap:wrap}.page{padding-left:16px;padding-right:16px}.art{right:-20px;opacity:.5}.hero-title{font-size:28px}.empty .section-title{font-size:17px}@media(max-width:350px){.card-body{padding:9px}.hero-sub{font-size:11px}.section-head .muted{font-size:10px}.nav-item{font-size:10px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}</style><div class="preview-label">本机手账 · 无需登录 · 照片与账目不上云</div><main id="app"></main><div id="toast" hidden></div><dialog id="photo-dialog"><form method="dialog"><button>关闭 ×</button></form><img alt="美食照片"></dialog><script>const module={exports:{}};const meals = ['早餐', '午餐', '晚餐', '加餐'];
+.food svg{display:block;width:76px;height:76px}.fork,.leaf{display:none}
+.meal-cover{display:block;position:relative;width:100%;height:156px;background:#eee8dc;overflow:hidden;text-align:left}
+.cover-layer{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.stacked{padding:12px;background:linear-gradient(145deg,#f1eadd,#e5dccd)}
+.stacked .cover-layer{inset:12px auto auto 10px;width:calc(100% - 40px);height:132px;border-radius:12px;box-shadow:2px 3px 8px #39291a25;border:1px solid #fff9ed}
+.stacked .layer-0{z-index:3}.stacked .layer-1{z-index:2;transform:translate(11px,5px) rotate(4deg)}.stacked .layer-2{z-index:1;transform:translate(21px,11px) rotate(8deg)}
+.meal-badge{z-index:4;pointer-events:none}.photo-count{position:absolute;bottom:9px;right:9px;z-index:4;background:#42392fcc;color:#fffaf0;border-radius:12px;padding:4px 8px;font-size:10px}
+.photo-heading{display:flex;justify-content:space-between;align-items:center;margin:4px 0 10px;font-size:12px;color:#85725c;gap:8px}.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.photo-tile,.photo-add{position:relative;aspect-ratio:1;min-width:0;border-radius:12px;overflow:hidden;background:#eee8da}.thumb-view{width:100%;height:100%;display:block}.thumb-view img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-remove{position:absolute;top:3px;right:3px;width:30px;height:30px;border-radius:50%;background:#42392fcc;color:white;font-size:22px;line-height:30px}
+.cover-label,.set-cover{position:absolute;bottom:4px;left:4px;border-radius:8px;background:#fff8edeb;color:#875333;font-size:10px;padding:5px 7px}.cover-label{pointer-events:none}
+.photo-add{border:1px dashed #cdb99d;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#947658;font-size:11px;gap:3px}.photo-add span{font-size:24px}.photo-add small{font-size:9px;color:#a39785}.photo-hint{margin-top:8px;line-height:1.6}.unreadable-photo{display:flex;height:100%;align-items:center;justify-content:center;text-align:center;font-size:10px;line-height:1.7;color:#947658}
+#photo-dialog{padding:14px;width:min(440px,94vw);max-width:94vw}#photo-dialog img{width:100%;height:60vh;object-fit:contain;max-width:100%;display:block;touch-action:pan-y}.gallery-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.gallery-header button,.gallery-controls button{padding:10px 15px;min-height:44px}.gallery-controls{display:flex;justify-content:space-between;gap:16px;margin-top:8px}.gallery-position{color:#947658;font-size:12px}.gallery-hint{text-align:center;font-size:11px;color:#a39785}
+.local-tools{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin:24px 0 12px}.local-tools button{color:#945d3d;font-size:13px;padding:10px 0}.local-tip{text-align:center;font-size:11px;line-height:1.8}.sheet{max-height:94dvh}.form-scroll{overscroll-behavior:contain}.brand{gap:8px}.brand .eyebrow{font-size:8px;letter-spacing:1px}.nav{gap:8px;padding-left:12px;padding-right:12px}.nav-item{flex:1;min-width:0}.add-button{white-space:nowrap;padding:18px 24px}.day{width:auto;min-width:0}.week{min-width:0}.summary{gap:12px;padding:20px}.big-number{font-size:clamp(25px,9vw,38px);overflow-wrap:anywhere}.card-bottom{gap:6px;flex-wrap:wrap}.page{padding-left:16px;padding-right:16px}.art{right:-20px;opacity:.5}.hero-title{font-size:28px}.empty .section-title{font-size:17px}@media(max-width:350px){.card-body{padding:9px}.hero-sub{font-size:11px}.section-head .muted{font-size:10px}.nav-item{font-size:10px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}</style><div class="preview-label">本机手账 · 无需登录 · 照片与账目不上云</div><main id="app"></main><div id="toast" hidden></div><dialog id="photo-dialog"><div class="gallery-header"><span class="gallery-position"></span><form method="dialog"><button>关闭 ×</button></form></div><img alt="美食照片"><div class="gallery-controls"><button class="gallery-prev" onclick="moveGallery(-1)">‹ 上一张</button><button class="gallery-next" onclick="moveGallery(1)">下一张 ›</button></div><div class="gallery-hint">左右滑动查看照片</div></dialog><script>const module={exports:{}};const meals = ['早餐', '午餐', '晚餐', '加餐'];
 function dateKey(d = new Date()) {
   return [d.getFullYear(), String(d.getMonth() + 1).padStart(2, '0'), String(d.getDate()).padStart(2, '0')].join('-');
 }
@@ -50,16 +63,16 @@ function render() {
 const d=app.data,s=d.stats;if(!s.categories)return;
 const btn=(label,method,value,cls='')=>`<button class="${cls}" onclick="action('${method}','${value}')">${label}</button>`;
 const filters=(list,current,method)=>`<div class="filters">${list.map(x=>btn(x,method,x,'chip '+(current===x?'active':''))).join('')}</div>`;
-document.querySelector('#app').innerHTML=`<div class="page"><div class="brand"><span class="brand-mark">一餐一记</span><span class="eyebrow">THE LITTLE MEAL DIARY</span></div><div class="hero"><div class="eyebrow">EAT WELL · LIVE SLOW</div><div class="hero-title">好好吃饭，<br>慢慢记录。</div><div class="hero-sub">把日常的滋味，存进生活里。</div><div class="art"><div class="plate"><div class="food">✳</div></div><div class="fork">╎</div><div class="leaf">❧</div></div></div>${d.tab==='diary'?`
+document.querySelector('#app').innerHTML=`<div class="page"><div class="brand"><span class="brand-mark">一餐一记</span><span class="eyebrow">THE LITTLE MEAL DIARY</span></div><div class="hero"><div class="eyebrow">EAT WELL · LIVE SLOW</div><div class="hero-title">好好吃饭，<br>慢慢记录。</div><div class="hero-sub">把日常的滋味，存进生活里。</div><div class="art"><div class="plate"><div class="food"><svg viewBox="0 0 100 100" role="img" aria-label="柠檬"><path d="M59 20C63 7 78 6 87 8C85 22 74 29 60 24" fill="#86956c"/><path d="M15 57C9 52 11 44 19 43C23 22 52 16 72 30C92 44 86 70 67 78C50 88 26 80 20 65C13 66 10 60 15 57" fill="#ead17b" stroke="#c5aa55" stroke-width="3"/><path d="M27 43C35 30 51 29 62 35" fill="none" stroke="#fff3c0" stroke-width="6" stroke-linecap="round"/><path d="M27 63L29 63M49 73L51 73M70 49L72 49" stroke="#c5aa55" stroke-width="3" stroke-linecap="round"/></svg></div></div><div class="fork">╎</div><div class="leaf">❧</div></div></div>${d.tab==='diary'?`
 <div class="summary"><div><div class="muted">${d.date===d.today?'今日':d.dateLabel}花费 · 元</div><div class="big-number">${s.dayTotal}</div></div><div class="summary-right"><span class="muted">本月累计</span><div class="small-number">¥ ${s.monthTotal}</div><span class="tiny">每一餐，都算数</span></div></div>
 <div class="section-head"><div><div class="section-title">${d.monthLabel}</div><input aria-label="选择日期" class="date-native" type="date" value="${d.date}" onchange="if(this.value)action('pickDate',this.value)"></div>${btn('回到今天','today','','text-button')}</div>
 <div class="week-wrap">${btn('‹','shiftWeek',-7,'week-arrow')}<div class="week">${d.weeks.map(w=>`<button class="day ${w.key===d.date?'selected':''}" onclick="action('setDay','${w.key}')"><span class="weekday">${w.label}</span><span class="day-number">${w.day}</span><span class="dot ${w.marked?'marked':''}"></span></button>`).join('')}</div>${btn('›','shiftWeek',7,'week-arrow')}</div>
 <div class="section-head"><div><div class="section-title">这一天的滋味</div><span class="tiny">A LITTLE TASTE OF EVERYDAY</span></div><span class="muted">${d.visible.length} 笔记录</span></div>${filters(d.filters,d.filter,'setFilter')}
-${d.visible.length?`<div class="cards">${d.visible.map(r=>`<article class="card"><div class="photo-wrap">${r.photo?`<img class="photo" src="${escape(r.photo)}" alt="${escape(r.title)}" onclick="wx.previewImage({current:this.src})">`:'<div class="photo placeholder"><span>♧</span><span class="tiny">一餐小确幸</span></div>'}<span class="meal-badge">${r.meal}</span></div><div class="card-body" onclick="action('edit','', '${r.id}')"><div class="card-title">${escape(r.title)}</div><div class="card-note">${escape(r.note||'好好吃饭，就是好好生活')}</div><div class="card-bottom"><span class="price">¥ ${r.price}</span><span class="edit-label">编辑 ↗</span></div></div></article>`).join('')}</div>`:`<div class="empty"><div class="empty-icon">♧</div><div class="section-title">${d.filter==='全部'?'今天的故事，从一餐开始':'这一餐，还没有记录'}</div><div class="muted">拍下喜欢的食物，记下小小的花费</div>${btn('＋ 记下这一餐','openAdd','','outline-button')}</div>`}`:`
+${d.visible.length?`<div class="cards">${d.visible.map(r=>`<article class="card"><div class="photo-wrap">${mealCover(r)}<span class="meal-badge">${r.meal}</span></div><div class="card-body" onclick="action('edit','', '${r.id}')"><div class="card-title">${escape(r.title)}</div><div class="card-note">${escape(r.note||'好好吃饭，就是好好生活')}</div><div class="card-bottom"><span class="price">¥ ${r.price}</span><span class="edit-label">编辑 ↗</span></div></div></article>`).join('')}</div>`:`<div class="empty"><div class="empty-icon">♧</div><div class="section-title">${d.filter==='全部'?'今天的故事，从一餐开始':'这一餐，还没有记录'}</div><div class="muted">拍下喜欢的食物，记下小小的花费</div>${btn('＋ 记下这一餐','openAdd','','outline-button')}</div>`}`:`
 <div class="section-head"><div class="section-title">花费小结</div><input aria-label="统计月份" class="date-native" type="month" value="${d.date.slice(0,7)}" onchange="if(this.value)action('pickMonth',this.value)"></div><div class="summary stats-summary"><div class="muted">本月吃饭花费 · 元</div><div class="big-number">${s.monthTotal}</div><div class="stats-line"><span>记录了 ${s.count} 餐</span><span>记录日均 ¥ ${s.average}</span></div></div><div class="stat-panel"><div class="section-title">每一餐的占比</div>${s.categories.map(c=>`<div class="category"><div class="category-head"><span>${c.label}</span><span>¥ ${c.amount} <span class="tiny"> / ${c.percent}%</span></span></div><div class="track"><div class="fill" style="width:${c.percent}%"></div></div></div>`).join('')}</div><div class="all-total"><span>从第一餐到现在</span><span class="price">¥ ${s.allTotal}</span></div><div class="footnote">日均按本月有记录的天数计算。<br>照片与账目仅保存在当前设备的这个浏览器中，请定期备份。</div>`}<div class="local-tools"><button onclick="backupLocal()">备份账本</button><button onclick="restoreLocal()">恢复备份</button><button onclick="storageInfo()">本机存储</button></div><div class="footnote local-tip">清理微信或浏览器数据可能丢失记录。换设备、换浏览器或更换网站域名后，需手动导入备份。</div><div class="bottom-note">— 好好吃饭，是生活的头等小事 —</div></div>
 <nav class="nav">${btn('<span class="nav-icon">▤</span><span>每日手账</span>','setTab','diary','nav-item '+(d.tab==='diary'?'nav-active':''))}${btn('＋ 记一餐','openAdd','','add-button')}${btn('<span class="nav-icon">◴</span><span>花费小结</span>','setTab','stats','nav-item '+(d.tab==='stats'?'nav-active':''))}</nav>${d.editor?editor(d,filters):''}`;
 }
-function editor(d,filters){const f=d.form;return `<div class="overlay" onclick="if(event.target===this)app.close()"><section class="sheet" role="dialog" aria-modal="true" aria-label="记下这一餐"><div class="sheet-handle"></div><div class="section-head"><div><div class="section-title">${f.id?'编辑这一餐':'记下这一餐'}</div><span class="tiny">SAVE A LITTLE MOMENT</span></div><button class="close" onclick="app.close()">×</button></div><div class="form-scroll"><div class="upload" onclick="app.choosePhoto()">${f.photo?`<img src="${escape(f.photo)}" alt="待保存的照片"><span class="photo-caption">轻触更换照片</span>`:'<div><div class="upload-icon">＋</div><div>添加美食照片</div><span class="tiny">拍一张，或从相册选择 · 可选</span></div>'}</div>${f.photo?'<button class="text-button remove-photo" onclick="app.removePhoto()">移除照片</button>':''}<label class="form-label" for="title" style="display:block">这一餐叫什么</label><input id="title" class="input" placeholder="比如：楼下的牛肉面" maxlength="30" value="${escape(f.title)}" oninput="field('title',this.value)"><label class="form-label" style="display:block" for="amount">花了多少钱</label><div class="amount-input"><span>¥</span><input id="amount" inputmode="decimal" placeholder="0.00" value="${escape(f.price)}" maxlength="9" oninput="field('price',this.value)"></div><div class="form-label">餐别</div>${filters(d.meals,f.meal,'meal')}<div class="date-field"><label for="date">用餐日期</label><input id="date" class="date-native" type="date" value="${f.date}" onchange="if(this.value)field('date',this.value)"></div><label class="form-label" style="display:block" for="note">留一句话 <span class="tiny">可选</span></label><textarea id="note" class="input note-input" maxlength="120" placeholder="今天的味道、一起吃饭的人……" oninput="field('note',this.value)">${escape(f.note)}</textarea>${f.id?'<button class="delete" onclick="app.remove()">删除这条记录</button>':''}</div><button class="save-button" style="width:100%" onclick="app.save()" ${d.busy?'disabled':''}>${d.busy?'正在保存':'保存这份小美好'}</button></section></div>`;}
+function editor(d,filters){const f=d.form;return `<div class="overlay" onclick="if(event.target===this)app.close()"><section class="sheet" role="dialog" aria-modal="true" aria-label="记下这一餐"><div class="sheet-handle"></div><div class="section-head"><div><div class="section-title">${f.id?'编辑这一餐':'记下这一餐'}</div><span class="tiny">SAVE A LITTLE MOMENT</span></div><button class="close" onclick="app.close()">×</button></div><div class="form-scroll">${editorPhotos(d)}<label class="form-label" for="title" style="display:block">这一餐叫什么</label><input id="title" class="input" placeholder="比如：楼下的牛肉面" maxlength="30" value="${escape(f.title)}" oninput="field('title',this.value)"><label class="form-label" style="display:block" for="amount">花了多少钱</label><div class="amount-input"><span>¥</span><input id="amount" inputmode="decimal" placeholder="0.00" value="${escape(f.price)}" maxlength="9" oninput="field('price',this.value)"></div><div class="form-label">餐别</div>${filters(d.meals,f.meal,'meal')}<div class="date-field"><label for="date">用餐日期</label><input id="date" class="date-native" type="date" value="${f.date}" onchange="if(this.value)field('date',this.value)"></div><label class="form-label" style="display:block" for="note">留一句话 <span class="tiny">可选</span></label><textarea id="note" class="input note-input" maxlength="120" placeholder="今天的味道、一起吃饭的人……" oninput="field('note',this.value)">${escape(f.note)}</textarea>${f.id?'<button class="delete" onclick="app.remove()">删除这条记录</button>':''}</div><button class="save-button" style="width:100%" onclick="app.save()" ${d.busy||d.photoBusy?'disabled':''}>${d.photoBusy?'照片处理中…':d.busy?'正在保存':'保存这份小美好'}</button></section></div>`;}
 
 
 const L = require('../../utils/ledger');
@@ -148,6 +161,57 @@ Page({
 });
 
 
+function mealCover(row) {
+  const photos = (row.photos || []).filter(p => p.url);
+  if (!photos.length) return '<div class="photo placeholder"><span>♧</span><span class="tiny">一餐小确幸</span></div>';
+  return `<button class="meal-cover ${photos.length > 1 ? 'stacked' : ''}" aria-label="查看 ${escape(row.title)} 的 ${photos.length} 张照片" onclick="openMealPhotos('${row.id}')">${photos.slice(0, 3).map((p, i) => `<img class="cover-layer layer-${i}" src="${escape(p.url)}" alt="${escape(row.title)} · 照片 ${i + 1}">`).reverse().join('')}${photos.length > 1 ? `<span class="photo-count">${photos.length} 张</span>` : ''}</button>`;
+}
+function editorPhotos(d) {
+  const photos = d.form.photos || [];
+  return `<div class="photo-heading"><span>这一餐的照片</span><span class="tiny">${photos.length} / 5 · 第一张为封面</span></div><div class="photo-grid">${photos.map((p, i) => `<div class="photo-tile">${p.url ? `<button class="thumb-view" aria-label="查看照片 ${i + 1}" onclick="openFormPhotos(${i})"><img src="${escape(p.url)}" alt="照片 ${i + 1}"></button>` : '<span class="unreadable-photo">无法读取<br>原照片仍保留</span>'}<button class="photo-remove" aria-label="移除照片 ${i + 1}" onclick="app.removePhoto(${i})" ${d.busy || d.photoBusy ? 'disabled' : ''}>×</button>${i === 0 ? '<span class="cover-label">封面</span>' : `<button class="set-cover" onclick="setMealCover(${i})" ${d.busy || d.photoBusy ? 'disabled' : ''}>设为封面</button>`}</div>`).join('')}${photos.length < 5 ? `<button class="photo-add" onclick="app.choosePhoto()" ${d.busy || d.photoBusy ? 'disabled' : ''}><span>＋</span>${d.photoBusy ? '处理照片中…' : '添加照片'}<small>相册 / 拍照</small></button>` : ''}</div><div class="tiny photo-hint">${d.photoBusy ? '正在压缩照片，请稍候…' : '最多 5 张 · 点击照片查看，点击 × 移除'}</div>`;
+}
+function setMealCover(index) {
+  if (app.data.busy || app.data.photoBusy) return;
+  const photos = [...app.data.form.photos];
+  photos.unshift(photos.splice(index, 1)[0]);
+  app.setData({ 'form.photos': photos });
+}
+let galleryPhotos = [], galleryIndex = 0;
+function openMealPhotos(id) { showGallery(app.data.rows.find(r => r.id === id)?.photos || [], 0); }
+function openFormPhotos(index) { showGallery(app.data.form.photos || [], index); }
+function showGallery(photos, index) {
+  const chosen = photos[index];
+  galleryPhotos = photos.filter(p => p.url).map(p => p.url);
+  if (!galleryPhotos.length) return;
+  galleryIndex = Math.max(0, galleryPhotos.indexOf(chosen?.url));
+  updateGallery();
+  const dialog = document.querySelector('#photo-dialog');
+  if (!dialog.open) dialog.showModal();
+}
+function updateGallery() {
+  const dialog = document.querySelector('#photo-dialog');
+  dialog.querySelector('img').src = galleryPhotos[galleryIndex];
+  dialog.querySelector('img').alt = `美食照片 ${galleryIndex + 1} / ${galleryPhotos.length}`;
+  dialog.querySelector('.gallery-position').textContent = `${galleryIndex + 1} / ${galleryPhotos.length}`;
+  dialog.querySelector('.gallery-prev').disabled = galleryIndex === 0;
+  dialog.querySelector('.gallery-next').disabled = galleryIndex === galleryPhotos.length - 1;
+}
+function moveGallery(step) {
+  galleryIndex = Math.max(0, Math.min(galleryPhotos.length - 1, galleryIndex + step));
+  updateGallery();
+}
+const galleryDialog = document.querySelector('#photo-dialog');
+let galleryTouch;
+galleryDialog.addEventListener('touchstart', e => { galleryTouch = { x: e.changedTouches[0].clientX, y: e.changedTouches[0].clientY }; }, { passive: true });
+galleryDialog.addEventListener('touchend', e => {
+  if (!galleryTouch) return;
+  const dx = e.changedTouches[0].clientX - galleryTouch.x, dy = e.changedTouches[0].clientY - galleryTouch.y;
+  if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) moveGallery(dx < 0 ? 1 : -1);
+  galleryTouch = null;
+}, { passive: true });
+galleryDialog.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') moveGallery(-1); if (e.key === 'ArrowRight') moveGallery(1); });
+galleryDialog.addEventListener('close', () => { galleryPhotos = []; galleryDialog.querySelector('img').removeAttribute('src'); });
+
 // IndexedDB is local to this browser and this exact website origin.
 let database;
 let photoURLs = [];
@@ -186,20 +250,25 @@ function transactionWrite(work) {
   });
 }
 async function localRows() { return localRequest(database.transaction('meals').objectStore('meals').getAll()); }
+const storedImages = row => row?.images || (row?.image ? [row.image] : []);
 async function reloadLocal() {
   const sequence = ++reloadSequence;
   const rows = await localRows();
   const urls = [];
   let unreadable = false;
   const records = await Promise.all(rows.map(async row => {
-    let photo = '';
     let photoUnreadable = false;
-    try {
-      const image = await photoBlob(row.image);
-      if (image) { photo = URL.createObjectURL(image); urls.push(photo); }
-    } catch (_) { unreadable = true; photoUnreadable = true; }
-    const { image, ...record } = row;
-    return { ...record, photo, photoUnreadable };
+    const photos = await Promise.all(storedImages(row).map(async (bytes, storedIndex) => {
+      try {
+        const url = URL.createObjectURL(await photoBlob(bytes)); urls.push(url);
+        return { url, storedIndex };
+      } catch (_) {
+        unreadable = true; photoUnreadable = true;
+        return { url: '', storedIndex, unreadable: true };
+      }
+    }));
+    const { image, images, ...record } = row;
+    return { ...record, photos, photo: photos.find(p => p.url)?.url || '', photoUnreadable };
   }));
   if (sequence !== reloadSequence) { urls.forEach(url => URL.revokeObjectURL(url)); return; }
   const previous = photoURLs;
@@ -235,6 +304,7 @@ app.save = async function () {
   if (photoProcessing) return wx.showToast({ title: '照片正在处理，请稍候再保存' });
   if (this.data.busy || !database) return;
   const f = { ...this.data.form };
+  if ((f.photos || []).length > 5) return wx.showToast({ title: '每餐最多 5 张照片' });
   let amount;
   try { amount = ledger.cents(f.price); } catch (e) { return wx.showToast({ title: e.message }); }
   if (!f.title.trim()) return wx.showToast({ title: '给这顿饭起个名字吧' });
@@ -244,8 +314,9 @@ app.save = async function () {
     const id = f.id || Date.now() + '-' + Math.random().toString(36).slice(2,10);
     const old = f.id ? await localRequest(database.transaction('meals').objectStore('meals').get(f.id)) : null;
     if (f.id && !old) throw Error('这条记录已被删除，请关闭表单并刷新');
-    const image = !f.photo ? (f.photoUnreadable ? old?.image : null) : f.photo.startsWith('data:') ? await readPhoto(dataURLBlob(f.photo), 'readAsArrayBuffer') : old?.image;
-    const row = { id, title: f.title.trim(), cents: amount, meal: f.meal, date: f.date, note: f.note.trim(), created: old?.created || Date.now(), image, revision: (old?.revision || 0) + 1 };
+    const images = await Promise.all((f.photos || []).map(p => p.url.startsWith('data:') ? readPhoto(dataURLBlob(p.url), 'readAsArrayBuffer') : storedImages(old)[p.storedIndex]));
+    if (images.some(image => !image)) throw Error('照片数据无法读取，请重新选择');
+    const row = { id, title: f.title.trim(), cents: amount, meal: f.meal, date: f.date, note: f.note.trim(), created: old?.created || Date.now(), images, revision: (old?.revision || 0) + 1 };
     await transactionWrite(store => {
       const read = store.get(id);
       read.onsuccess = () => {
@@ -273,8 +344,8 @@ async function backupLocal() {
   app.setData({ busy: true });
   try {
     const rows = await localRows(), records = [];
-    for (const row of rows) { const { image, ...record } = row; records.push({ ...record, photo: image ? await blobDataURL(await photoBlob(image)) : '' }); }
-    const file = new File([JSON.stringify({ format: 'little-meal-diary', version: 1, records })], `一餐一记备份-${ledger.dateKey()}.json`, { type: 'application/json' });
+    for (const row of rows) { const { image, images, ...record } = row; records.push({ ...record, photos: await Promise.all(storedImages(row).map(async bytes => blobDataURL(await photoBlob(bytes)))) }); }
+    const file = new File([JSON.stringify({ format: 'little-meal-diary', version: 2, records })], `一餐一记备份-${ledger.dateKey()}.json`, { type: 'application/json' });
     const url = URL.createObjectURL(file), link = document.createElement('a');
     link.href = url; link.download = file.name; document.body.append(link); link.click(); link.remove();
     setTimeout(() => URL.revokeObjectURL(url), 60000);
@@ -297,12 +368,14 @@ async function importLocalFile(file) {
   app.setData({ busy: true });
   try {
     const backup = JSON.parse(await file.text());
-    if (backup.format !== 'little-meal-diary' || backup.version !== 1 || !Array.isArray(backup.records)) throw Error('这不是有效的记账本备份');
+    if (backup.format !== 'little-meal-diary' || ![1, 2].includes(backup.version) || !Array.isArray(backup.records)) throw Error('这不是有效的记账本备份');
     const seen = new Set();
     const records = await Promise.all(backup.records.map(async r => {
       if (!r || typeof r.id !== 'string' || !/^[a-zA-Z0-9_-]{1,80}$/.test(r.id) || seen.has(r.id) || typeof r.title !== 'string' || !r.title.trim() || r.title.length > 30 || !Number.isSafeInteger(r.cents) || r.cents <= 0 || r.cents > 99999999 || !ledger.meals.includes(r.meal) || typeof r.note !== 'string' || r.note.length > 120 || !/^\d{4}-\d{2}-\d{2}$/.test(r.date) || isNaN(Date.parse(r.date)) || new Date(r.date).toISOString().slice(0,10) !== r.date || !Number.isSafeInteger(r.created)) throw Error('备份中的记录格式不正确');
       seen.add(r.id);
-      return { id: r.id, title: r.title, cents: r.cents, meal: r.meal, date: r.date, note: r.note, created: r.created, revision: Date.now(), image: r.photo ? await readPhoto(dataURLBlob(r.photo), 'readAsArrayBuffer') : null };
+      const photos = backup.version === 1 ? (r.photo ? [r.photo] : []) : r.photos;
+      if (!Array.isArray(photos) || photos.length > 5 || photos.some(p => typeof p !== 'string')) throw Error('备份中的照片格式不正确或超过每餐 5 张');
+      return { id: r.id, title: r.title, cents: r.cents, meal: r.meal, date: r.date, note: r.note, created: r.created, revision: Date.now(), images: await Promise.all(photos.map(p => readPhoto(dataURLBlob(p), 'readAsArrayBuffer'))) };
     }));
     if (!confirm(`导入 ${records.length} 条记录？相同编号的记录将被备份覆盖，其他记录保留。`)) return;
     await transactionWrite(store => records.forEach(r => store.put(r)));
@@ -317,25 +390,30 @@ function restoreLocal() {
 async function storageInfo() {
   if (!database) return;
   const rows = await localRows();
-  const used = rows.reduce((total, r) => total + (r.image?.byteLength || r.image?.size || 0), 0);
+  const used = rows.reduce((total, r) => total + storedImages(r).reduce((sum, p) => sum + (p.byteLength || p.size || 0), 0), 0);
   alert(`本机共 ${rows.length} 条记录，照片约 ${(used / 1048576).toFixed(1)} MB。\n容量由当前微信或浏览器决定，无法承诺固定照片张数。请定期备份。\n账目和照片只保存在本机，不会上传。`);
 }
 window.addEventListener('pageshow', () => { if (database && !app.data.editor && !app.data.busy) reloadLocal().catch(() => {}); });
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && database && !app.data.editor && !app.data.busy) { app.onShow(); reloadLocal().catch(() => {}); } });
 
-wx.chooseMedia = function ({ success, fail }) {
+wx.chooseMedia = function ({ count = 1, success, fail }) {
   if (photoProcessing) return;
   const form = app.data.form;
   const input = document.createElement('input');
-  input.type = 'file'; input.accept = 'image/*';
+  input.type = 'file'; input.accept = 'image/*'; input.multiple = count > 1;
   input.style.cssText = 'position:fixed;left:-10000px;top:0;width:1px;height:1px';
   document.body.append(input);
   input.oncancel = () => input.remove();
   input.onchange = async () => {
-    const file = input.files[0];
+    const files = Array.from(input.files || []);
     input.remove();
-    if (!file) return;
+    if (!files.length) return;
+    if (files.length > count) { fail({ errMsg: `还能添加 ${count} 张照片，请重新选择` }); return; }
     photoProcessing = true;
+    app.setData({ photoBusy: true });
+    const tempFiles = [];
+    try {
+    for (const file of files) {
     let source, canvas;
     try {
       if (file.size > 20 * 1024 * 1024) throw Error('照片超过 20 MB，请选择较小的照片');
@@ -357,21 +435,28 @@ wx.chooseMedia = function ({ success, fail }) {
       context.drawImage(img, 0, 0, canvas.width, canvas.height);
       const photo = canvas.toDataURL('image/jpeg', .8);
       dataURLBlob(photo);
-      if (app.data.editor && app.data.form === form) success({ tempFiles: [{ tempFilePath: photo }] });
-    } catch (e) {
-      if (app.data.editor && app.data.form === form) fail({ errMsg: e.message });
+      tempFiles.push({ tempFilePath: photo });
     } finally {
       if (source) URL.revokeObjectURL(source);
       if (canvas) { canvas.width = 1; canvas.height = 1; }
-      photoProcessing = false;
     }
+    }
+    if (app.data.editor && app.data.form === form) success({ tempFiles });
+    } catch (e) {
+      if (app.data.editor && app.data.form === form) fail({ errMsg: e.message });
+    } finally { photoProcessing = false; app.setData({ photoBusy: false }); }
   };
   input.click();
 };
 app.choosePhoto = function () {
   if (this.data.busy || photoProcessing) return;
-  wx.chooseMedia({ success: res => this.setData({ 'form.photo': res.tempFiles[0].tempFilePath, 'form.photoUnreadable': false }), fail: e => wx.showToast({ title: e.errMsg || '选图失败，请重新选择照片' }) });
+  const photos = this.data.form.photos || [];
+  if (photos.length >= 5) return wx.showToast({ title: '每餐最多 5 张照片，可先移除一张' });
+  wx.chooseMedia({ count: 5 - photos.length, success: res => this.setData({ 'form.photos': [...photos, ...res.tempFiles.map(p => ({ url: p.tempFilePath }))] }), fail: e => wx.showToast({ title: e.errMsg || '选图失败，请重新选择照片' }) });
 };
-app.removePhoto = function () { if (!this.data.busy && !photoProcessing) this.setData({ 'form.photo': '', 'form.photoUnreadable': false }); };
+app.removePhoto = function (index) { if (!this.data.busy && !photoProcessing) this.setData({ 'form.photos': this.data.form.photos.filter((_, i) => i !== index) }); };
+const openAdd = app.openAdd;
+app.openAdd = function () { if (!this.data.busy) { openAdd.call(this); this.setData({ 'form.photos': [] }); } };
+app.close = function () { if (!this.data.busy && !photoProcessing) this.setData({ editor: false }); };
 
 app.onLoad();</script></html>
